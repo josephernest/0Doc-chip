@@ -1,6 +1,7 @@
 * { margin: 0; padding: 0; border: 0; font-family: sans-serif; outline: 0; }
 html, body { height: 100%; }
 #left { width: 250px; position: fixed; left: 0; top: 0; background-color: #444; color: white; height: 100%; overflow: auto; }
+.rendering { display: none; }
 #search { border-bottom: 1px solid #666; padding: 6px 10px 3px 10px; margin: 0 10px; }
 #inputsearch { background: #444;  margin: 0px 15px; color: white; font-weight: bold; width: 145px; }
 #toc { padding: 20px 0 15px 0; border-bottom: 1px dashed #666; }
