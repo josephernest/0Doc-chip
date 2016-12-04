@@ -28,6 +28,8 @@ if ($('#content file').length === 0)
 
 go = function() {
 // Render Markdown
+marked.Lexer.rules.gfm.heading = marked.Lexer.rules.normal.heading;  // fix to allow ##title instead of ## title (see https://github.com/chjj/marked/issues/642#issuecomment-130213790)
+marked.Lexer.rules.tables.heading = marked.Lexer.rules.normal.heading;
 $('#content').html(marked($('#content').text()));
 
 // TOC building, inspired of http://stackoverflow.com/a/40946392/1422096
