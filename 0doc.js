@@ -156,7 +156,7 @@
         }
 
         $('#inputsearch').on('input', function(e) {
-            $('#content').unmark().mark($('#inputsearch').val(), { separateWordSearch: true, done: function() { 
+            $('#content').unmark().mark($('#inputsearch').val(), { separateWordSearch: true, accuracy: "exactly", done: function() { 
                 results = $('#content').find("mark");
                 currentIndex = -1;
             }});
