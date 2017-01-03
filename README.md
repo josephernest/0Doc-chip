@@ -7,5 +7,3 @@ ___
 This version allows to include files directly in the HTML:
 
     <file src="chapter1.md"></file>
-
-Todo: improve `mark.js` search feature speed
